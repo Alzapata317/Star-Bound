@@ -35,20 +35,20 @@ export default function Nav() {
             <Link href="/" className='pm-sm:w-[20vw] pm-md:hidden h-3/5 flex items-center justify-center lm-sm:hidden'><Image src="/assets/images/MobileLogo1.png" alt='Star-Bound Logo' width={1700} height={2400}/></Link>
             </div>
             <ul className='w-full h-1/5 flex items-center justify-center gap-[10vw] text-white text-[2vh] pm-sm:hidden pm-md:flex'>
-                <a className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "Home" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("Home"))}>Home</a>
-                <a className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "About" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("About"))}>About</a>
-                <a className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "Merch" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("Merch"))}>Merch</a>
-                <a className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "News" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("News"))}>News</a>
+                <button className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "Home" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("Home"))}>Home</button>
+                <button className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "About" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("About"))}>About</button>
+                <button className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "Merch" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("Merch"))}>Merch</button>
+                <button className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "News" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("News"))}>News</button>
             </ul>
         </div>
         <div className='w-1/5'></div>
         {showTabs == true && (
             <div className='absolute top-[20vh] bg-black h-[80vh] w-full lm-sm:hidden pm-md:hidden'>
-                <ul className='flex flex-col px-[15vw] py-[5vh] text-[2.5vh] gap-7'>
-                    <a className='hover:text-purple-400' href="">Home</a>
-                    <a className='hover:text-purple-400' href="">About</a>
-                    <a className='hover:text-purple-400' href="">Merch</a>
-                    <a className='hover:text-purple-400' href="">News</a>
+                <ul className='flex flex-col px-[15vw] py-[5vh] text-[2.5vh] gap-7 items-start'>
+                    <button className='hover:text-purple-400' onClick={() => (setActive("Home"), setShowTabs(false))}>Home</button>
+                    <button className='hover:text-purple-400' onClick={() => (setActive("About"), setShowTabs(false))}>About</button>
+                    <button className='hover:text-purple-400' onClick={() => (setActive("Merch"), setShowTabs(false))}>Merch</button>
+                    <button className='hover:text-purple-400' onClick={() => (setActive("News"), setShowTabs(false))}>News</button>
                 </ul>
             </div>
         )}
