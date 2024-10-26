@@ -68,7 +68,7 @@ export default function Home() {
           {videoVisible && (
             <div className={`w-full h-[80vh] overflow-hidden ${videoEnded ? 'animate-shrink' : ''}`}>
               <video
-                src="/assets/videos/Animation.mov"
+                src="/assets/videos/Animation.mp4"
                 autoPlay
                 muted
                 className="w-full h-full object-cover"
