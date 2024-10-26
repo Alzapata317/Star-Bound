@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        shrink: {
+          from: { height: '80vh' },
+          to: { height: '0vh' }
+        }
+      },
+      animation: {
+        shrink: 'shrink 1s forwards'
+      }
     },
     screens: {
       'pm-sm': { 'raw': '(min-width: 0px) and (orientation: portrait)' },
