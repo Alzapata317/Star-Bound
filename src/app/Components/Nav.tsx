@@ -35,26 +35,26 @@ export default function Nav() {
     }, [showTabs]);
 
   return (
-    <div className='bg-black h-[20vh] flex relative'>
+    <div className='bg-black h-[20vh] flex relative pm-md:h-[15vh]'>
         <div className='w-1/5 p-8 flex flex-col pm-sm:hidden pm-md:flex gap-4'>
             <ul className='w-full gap-5 flex'>
-                <Link className='w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/starboundmanga/?igsh=Zm9vaXIxZWRna2U1&utm_source=qr">
-                    <FaInstagram className=' w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg'/>
+                <Link className='w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/starboundmanga/?igsh=Zm9vaXIxZWRna2U1&utm_source=qr">
+                    <FaInstagram className=' w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg'/>
                 </Link>
-                <Link className='w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@star.bound.manga?_t=8lFccmQzg5O&_r=1">
-                    <FaTiktok className=' w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg'/>
+                <Link className='w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@star.bound.manga?_t=8lFccmQzg5O&_r=1">
+                    <FaTiktok className=' w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg'/>
                 </Link>
-                <Link className='w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://x.com/starboundmanga?s=21&t=6l6Ll6G8x9_37zykGoqYyg">
-                    <RiTwitterXLine className=' w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg'/>
+                <Link className='w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://x.com/starboundmanga?s=21&t=6l6Ll6G8x9_37zykGoqYyg">
+                    <RiTwitterXLine className=' w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg'/>
                 </Link>
-                <Link className='w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/manga-project-starbound?utm_campaign=p_lico+share-sheet&utm_content=share_ai_control&utm_medium=copy_link&utm_source=customer">
-                    <SiGofundme className=' w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg'/>
+                <Link className='w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/manga-project-starbound?utm_campaign=p_lico+share-sheet&utm_content=share_ai_control&utm_medium=copy_link&utm_source=customer">
+                    <SiGofundme className=' w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg'/>
                 </Link>
-                <Link className='w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://patreon.com/Star_Bound_Series?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">
-                    <TbBrandPatreon className=' w-[2vw] pm-md:w-[3vw] h-[3.5vh] rounded-lg'/>
+                <Link className='w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg' target="_blank" rel="noopener noreferrer" href="https://patreon.com/Star_Bound_Series?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">
+                    <TbBrandPatreon className=' w-[2vw] pm-md:w-[2vw] h-[3.5vh] rounded-lg'/>
                 </Link>
             </ul>
-            <a href="mailto:Star.bound.series.inc@gmail.com" className='w-full text-white hover:text-purple-400'>Star.bound.series.inc@gmail.com</a>
+            <a href="mailto:Star.bound.series.inc@gmail.com" className='w-full text-white hover:text-purple-400 pm-md:text-[1vh]'>Star.bound.series.inc@gmail.com</a>
         </div>
         <div className='w-1/5 h-full pm-md:hidden lm-sm:hidden flex items-center justify-center'>
                 <Divide toggled={showTabs} toggle={setShowTabs} color='white'/>
@@ -73,12 +73,13 @@ export default function Nav() {
         </div>
         <div className='w-1/5'></div>
         {showTabs == true && (
-            <div className='absolute top-[20vh] bg-black h-[85vh] w-full lm-sm:hidden pm-md:hidden z-10'>
-                <ul className='flex flex-col px-[15vw] py-[5vh] text-[2.5vh] gap-7 items-start'>
-                    <button className='hover:text-purple-400' onClick={() => (setActive("Home"), setShowTabs(false))}>Home</button>
-                    <button className='hover:text-purple-400' onClick={() => (setActive("News"), setShowTabs(false))}>News</button>
-                    <button className='hover:text-purple-400' onClick={() => (setActive("Merch"), setShowTabs(false))}>Merch</button>
-                    <button className='hover:text-purple-400' onClick={() => (setActive("About"), setShowTabs(false))}>About</button>
+            <div className='absolute top-[20vh] bg-gray-950 h-[85vh] w-full lm-sm:hidden pm-md:hidden z-10'>
+                <ul className='flex flex-col  text-[2.5vh]  items-start divide-y divide-white w-full'>
+                    <button className='hover:text-purple-400 w-full h-[10vh] flex justify-center items-center' onClick={() => (setActive("Home"), setShowTabs(false))}>Home</button>
+                    <button className='hover:text-purple-400 w-full h-[10vh] flex justify-center items-center' onClick={() => (setActive("News"), setShowTabs(false))}>News</button>
+                    <button className='hover:text-purple-400 w-full h-[10vh] flex justify-center items-center' onClick={() => (setActive("Merch"), setShowTabs(false))}>Merch</button>
+                    <button className='hover:text-purple-400 w-full h-[10vh] flex justify-center items-center' onClick={() => (setActive("About"), setShowTabs(false))}>About</button>
+                    <button className=' w-full h-[10vh] pl-[10vw]'></button>
                 </ul>
             </div>
         )}

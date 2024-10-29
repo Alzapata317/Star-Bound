@@ -67,7 +67,7 @@ export default function Home() {
         <div className="w-full h-auto bg-cover" style={{ backgroundImage: `url(${"/assets/images/Background1.jpeg"})` }}>
           {/* Video Section */}
           {videoVisible && (
-            <div className={`w-full h-[80vh] overflow-hidden ${videoEnded ? 'animate-shrink' : ''} md:h-[60vh] sm:h-[50vh]`}>
+            <div className={`w-full h-[80vh] pm-md:h-[85vh] overflow-hidden ${videoEnded ? 'animate-shrink' : ''} md:h-[60vh] sm:h-[50vh]`}>
               <video
                 src="/assets/videos/Animation.mp4"
                 autoPlay
@@ -79,9 +79,9 @@ export default function Home() {
             </div>
           )}
           {/* Rest of your content */}
-          <div className="w-full h-[80vh] pm-sm:h-auto flex pm-sm:flex-col items-center px-[10vw] py-[10vh] bg-[#00000039] relative">
-            <img className='absolute bottom-[2vh] right-0 w-[10vw] h-[18vh] pm-sm:w-[30vw]' src='/assets/images/art/Kallian1.png' />
-            <main className="w-2/6 pm-sm:w-5/6 h-[60vh] pm-sm:h-[50vh] flex shadow-2xl">
+          <div className="w-full h-[80vh] pm-sm:h-auto flex pm-sm:flex-col justify-center items-center px-[10vw] py-[10vh] bg-[#00000039] relative">
+            <img className='absolute bottom-[2vh] right-0 w-[10vw] pm-md:w-[25vw] h-[18vh] pm-sm:w-[30vw]' src='/assets/images/art/Kallian1.png' />
+            <main className="w-2/6 pm-sm:w-5/6 pm-md:w-4/6 h-[60vh] pm-sm:h-[50vh] flex shadow-2xl">
               {/* Main Image */}
               <img
                 className="bg-green-500 w-full flex items-center justify-center rounded-2xl"
@@ -115,7 +115,7 @@ export default function Home() {
                 })}
               </div>
             </main>
-            <aside className='w-4/6 pm-sm:w-full h-full flex flex-col items-center pl-[5vw]'>
+            <aside className='w-4/6 pm-sm:w-full h-full flex flex-col items-center pm-sm:text-center lm-sm:pl-[5vw]'>
               <h2 className='h-[15vh] flex justify-center items-center text-center font-bold text-purple-400 lm-sm:hidden text-[5vh]'>Volume 1</h2>
               <h2 className='h-[15vh] flex justify-center items-center text-center font-bold text-purple-400 pm-sm:hidden'>Volume 1 of Star-Bound</h2>
               <p className='text-[2.5vh] pm-sm:text-[2vh]'>
@@ -133,33 +133,33 @@ export default function Home() {
         </div>
       )}
       {active === "News" && (
-        <div className='w-full h-[80vh] bg-cover px-[10vw] py-[10vh]' style={{ backgroundImage: `url(${"/assets/images/Background1.jpeg"})` }}>
-          {/* <h1 className='w-full text-[6vh] text-center h-[15vh] pm-sm:text-[5vh]'>Recent Updates</h1>
-          <ul className='list-disc pm-sm:text-[2.5vh]'>
+        <div className='w-full h-[80vh] pm-md:h-[85vh] bg-cover px-[10vw] py-[10vh]' style={{ backgroundImage: `url(${"/assets/images/Background1.jpeg"})` }}>
+          <h1 className='w-full text-[6vh] text-center h-[15vh] pm-sm:text-[5vh]'>Recent Updates</h1>
+          <ul className='list-disc pm-sm:text-[2.5vh] rounded-xl text-center border-black bg-gradient-to-t from-blue-500 from-0%  to-blue-600 to-40% pm-sm:px-[2vw] pm-sm:py-[1vh]'>
             <li>Volume 1 of Star-Bound is released go check it out on Amazon!  -  October 27</li>
-          </ul> */}
+          </ul>
         </div>
       )}
       {active === "Merch" && (
-        <div className='w-full h-[80vh] flex justify-center items-center bg-cover text-black text-[6vh] pm-sm:text-[4vh]' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
+        <div className='w-full h-[80vh] pm-md:h-[85vh] flex justify-center items-center bg-cover text-black text-[6vh] pm-sm:text-[4vh]' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
           COMING SOON ....
         </div>
       )}
       {active === "About" && (
-        <div className='w-full lm-sm:h-[80vh] px-[10vw] py-[5vh] bg-cover text-black' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
+        <div className='w-full pm-md:h-[85vh] pm-sm:h-[80vh] lm-sm:h-[80vh] px-[10vw] py-[5vh] bg-cover text-black' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
           <div className='flex w-full justify-between'>
             <img 
               src="/assets/images/art/Kallian2.png" 
               alt=""
-              className='w-[10vw] pm-sm:w-[30vw] h-[17vh]' 
+              className='w-[10vw] pm-sm:w-[30vw] pm-md:w-[25vw] h-[17vh]' 
             />
             <img 
               src="/assets/images/art/Kallian3.png" 
               alt=""
-              className='w-[10vw] pm-sm:w-[30vw] h-[17vh] pm-sm:mt-[2vh]' 
+              className='w-[10vw] pm-sm:w-[30vw] pm-md:w-[25vw] h-[17vh] pm-sm:mt-[2vh]' 
             />
           </div>
-          <div className='text-[3vh] pm-sm:text-[2vh] text-center lm-sm:px-[15vw] w-full pm-sm:mt-[3vh]'>
+          <div className='lm-md:text-[2.5vh] pm-sm:text-[2vh] lm-sm:text-[2.5vh] text-center lm-sm:px-[15vw] w-full pm-sm:mt-[3vh]'>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
