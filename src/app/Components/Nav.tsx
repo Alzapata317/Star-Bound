@@ -62,7 +62,7 @@ export default function Nav() {
         <div className='w-3/5 flex flex-col justify-center items-center'>
             <div className='w-full h-4/5 flex items-center justify-center'>
             <Link href="/" className='w-1/2 pm-md:w-2/3 h-4/5 flex items-center justify-center pm-sm:hidden pm-md:flex'><Image src="/assets/images/DesktopLogo2.png" alt='Star-Bound Logo' width={1700} height={2400}/></Link>
-            <Link href="/" className='pm-sm:w-[20vw] pm-md:hidden h-3/5 flex items-center justify-center lm-sm:hidden'><Image src="/assets/images/MobileLogo3.png" alt='Star-Bound Logo' width={1700} height={2400}/></Link>
+            <Link href="/" className='pm-sm:w-[20vw] pm-md:hidden h-3/5 flex items-center justify-center lm-sm:hidden'><Image src="/assets/images/MobileLogo.png" alt='Star-Bound Logo' width={1700} height={2400}/></Link>
             </div>
             <ul className='w-full h-1/5 flex items-center justify-center gap-[10vw] text-white text-[2vh] pm-sm:hidden pm-md:flex'>
                 <button className={`hover:border-b-2 hover:border-b-white hover:text-purple-400 ${active == "Home" ? 'text-purple-400 border-b-white border-b-2' : ''}`} onClick={() => (setActive("Home"), setShowTabs(false))}>Home</button>
