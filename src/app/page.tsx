@@ -119,7 +119,12 @@ export default function Home() {
               <h2 className='h-[15vh] flex justify-center items-center text-center font-bold text-purple-400 lm-sm:hidden text-[5vh]'>Volume 1</h2>
               <h2 className='h-[15vh] flex justify-center items-center text-center font-bold text-purple-400 pm-sm:hidden'>Volume 1 of Star-Bound</h2>
               <p className='text-[2.5vh] pm-sm:text-[2vh]'>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              A lone bounty hunter, hardened by years of dangerous missions, finds himself entangled in a series of 
+              events that challenge his resolve and force him to question his purpose. Along the way, he encounters 
+              powerful forces, both friend and foe, that alter the course of his journey. As he battles external enemies 
+              and wrestles with internal demons, the hunter's path becomes one of survival, self-discovery, and 
+              transformation. His once-clear objectives blur, leading him to confront the deeper meaning of his existence 
+              in a universe filled with conflict and chaos.
               </p>
               <Link href='https://a.co/d/9Cn7nMX' target="_blank" rel="noopener noreferrer">
                 <button 
@@ -146,7 +151,7 @@ export default function Home() {
         </div>
       )}
       {active === "About" && (
-        <div className='w-full pm-md:h-[85vh] pm-sm:h-[80vh] lm-sm:h-[80vh] px-[10vw] py-[5vh] bg-cover text-black' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
+        <div className='w-full px-[10vw] py-[5vh] bg-cover text-black' style={{ backgroundImage: `url(${"/assets/images/Background2.jpeg"})` }}>
           <div className='flex w-full justify-between'>
             <img 
               src="/assets/images/art/Kallian2.png" 
@@ -160,14 +165,30 @@ export default function Home() {
             />
           </div>
           <div className='lm-md:text-[2.5vh] pm-sm:text-[2vh] lm-sm:text-[2.5vh] text-center lm-sm:px-[15vw] w-full pm-sm:mt-[3vh]'>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <div className='flex flex-col gap-10'>
+              <p>
+                Star-Bound follows the thrilling journey of Kallion, an intergalactic bounty hunter 
+                hardened by years of perilous missions and deadly confrontations. Known for his unbreakable 
+                resolve and fierce independence, Kallion has built his reputation in the cutthroat world 
+                of space bounty hunters. But his latest mission pulls him into an unexpected and life-altering 
+                journey, forcing him to question the very foundation of his path.
+              </p>
+              <p>
+                In Star-Bound, Kallion navigates mysterious alliances, dangerous enemies, and a haunting past 
+                that refuses to stay buried. Facing monsters, warriors, and his own inner turmoil, he’s challenged 
+                not only in skill but in spirit. Each new conflict raises the stakes, revealing secrets hidden 
+                deep within ancient civilizations and testing his loyalties to those he meets along the way. As 
+                he travels from one cosmic battle to another, Kallion begins to see a world beyond bounty contracts
+                 and bloodshed—a galaxy where survival isn’t enough and honor and redemption may hold greater worth.
+              </p>
+              <p>
+                As much a story of self-discovery as it is a high-stakes space adventure, Star-Bound is packed with 
+                action, suspense, and profound themes of justice, loyalty, and the courage to confront one’s past. 
+                Kallion’s path to redemption unfolds against the stunning backdrop of a universe on the brink, where 
+                every decision can alter the balance of power among stars. Will Kallion remain the unyielding lone wolf, 
+                or will he forge a new path in a galaxy teetering on the edge of chaos?
+              </p>
+            </div>
             <h2 className='text-[5vh] w-full text-center mt-[5vh]'>Enjoy the Story!</h2>
           </div>
         </div>
